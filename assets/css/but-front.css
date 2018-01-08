@@ -1,0 +1,31 @@
+body.page-id-2 h1 {
+	font-size: 60px;
+    line-height: 1.2em;
+    text-transform: capitalize;
+}
+
+.wpcf7-form span.address select {
+    color: #f0f0f0;
+    background: rgba(255, 255, 255, .2);
+    border: 0;
+    -webkit-box-border-radius: 6px;
+    -moz-box-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+}
+.wpcf7-form span.address select option {
+	background-color: #cf8397;
+}
+
+.but-is-logged-container .logged-actions {
+	margin-top: 30px;
+}
+.but-is-logged-container .logged-actions a {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}

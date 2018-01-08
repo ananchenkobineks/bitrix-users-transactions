@@ -1,0 +1,638 @@
+.but-container .is-account {
+	margin-top: 20px;
+}
+
+/*
+  Account styles
+*/
+
+
+.user-balance {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.alert > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+body h1 {
+	color: #56565a !important;
+	margin: 0;
+	text-transform: none;
+	font-size: 22px;
+	letter-spacing: 0 !important;
+	line-height: 40px;
+}
+
+nav.but-account-navigation {
+	border-top: 1px solid #ddd;
+}
+
+nav.but-account-navigation ul {
+	list-style: none;
+	padding-left: 0;
+    overflow: hidden;
+}
+
+nav.but-account-navigation ul li {
+	border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+	background-color: #f5f5f5;
+    padding: 0;
+}
+
+nav.but-account-navigation ul li:hover {
+    background-color: #f9f9f9;
+}
+
+nav.but-account-navigation ul li span,
+nav.but-account-navigation ul li:hover a {
+    color: #c1647d;
+}
+
+nav.but-account-navigation ul li a {
+    padding: 12px 8px 12px 12px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+nav.but-account-navigation .dashicons {
+    color: #72889e;
+    margin-right: 4px;
+    margin-top: 2px;
+}
+
+nav.but-account-navigation ul li.active {
+	background-color: #f9f9f9;
+    border-right: 1px solid #f9f9f9;
+    margin-right: -2px;
+    z-index: 10;
+    position: relative;
+    padding: 0;
+}
+
+nav.but-account-navigation ul li.active a {
+    font-weight: 700;
+}
+
+nav.but-account-navigation ul li:before {
+	font-family: 'dashicons';
+	display: inline-block;
+	margin-right: .25em;
+	color: #72889e;
+	font-size: 20px;
+}
+
+nav.but-account-navigation ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+nav.but-account-navigation a .count {
+    display: inline-block;
+    background-color: #d54e21;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    margin: 4px 0 0 3px;
+    vertical-align: top;
+    border-radius: 10px;
+    z-index: 26;
+    padding: 0 6px
+}
+
+.bit-shortcode {
+	margin-top: 80px;
+}
+
+.but-container {
+	min-height: 600px;
+}
+
+.account-content {
+	background-color: #f9f9f9;
+	margin-top: 71px;
+}
+
+.account-border {
+	border: 1px solid #ddd;
+	padding: 30px;
+	min-height: 246px;
+	margin-left: -30px;
+	background-color: #f9f9f9;
+	margin-right: -14px;
+}
+
+#edit-account-form  label {
+	margin-right: 20px;
+	min-width: 130px;
+}
+
+#edit-account-form input[type="text"],
+#edit-account-form input[type="email"],
+#add-transaction-form input[type="text"],
+#add-transaction-form textarea {
+	padding: 2px 5px 2px 6px;
+}
+
+#edit-account-form legend {
+	padding-bottom: 15px;
+}
+
+#edit-account-form fieldset {
+	margin-top: 50px;
+}
+
+#edit-account-form fieldset label {
+	min-width: 170px;
+}
+
+#edit-account-form input[type="submit"],
+.buttons-wrap a.btn {
+	margin-top: 20px;
+	font-size: 14px;
+	letter-spacing: 0;
+	padding: 12px;
+	border-radius: 4px;
+
+}
+
+.buttons-wrap a.btn,
+#but-login-form input[type="submit"],
+.but-is-logged-container .btn {
+	font-size: 13px;
+	letter-spacing: 0;
+	padding: 8px;
+	border-radius: 7px;
+}
+
+.account-orders table tbody>tr>td {
+	font-size: 15px;
+}
+
+.orders-table {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.orders-table thead > tr > th,
+.orders-table tbody > tr > td {
+    width: auto;
+    height: auto;
+}
+
+.but-login-form {
+    margin-top: 40px;
+    max-width: 460px;
+}
+
+.but-login-form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#but-login-form label {
+    min-width: 100px;
+}
+
+#but-login-form label[for="user_login"] {
+    font-size: 17px;
+}
+
+#but-login-form input[type="text"],
+#but-login-form input[type="password"] {
+    padding-left: 5px;
+    min-width: 190px;
+}
+
+#but-login-form .check {
+    margin-right: 20px;
+}
+
+#but-login-form .check span {
+    padding-left: 4px;
+}
+
+#but-login-form input[type="submit"]{
+    min-width: 120px;
+    margin-bottom: 0;
+}
+
+p.mb-5 {
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+    nav.but-account-navigation ul {
+       margin-right: -1px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .account-content {
+        margin-top: 0;
+        background-color: transparent;
+    }
+
+    .account-border {
+        margin: 0;
+    }
+    nav.but-account-navigation ul {
+        margin-bottom: -1px;
+    }
+
+    nav.but-account-navigation ul li {
+        text-align: center;
+        float: left;
+        width: 20%;
+    }
+
+    nav.but-account-navigation ul li.active {
+        border-right: 0;
+        margin-right: 0;
+        border-bottom: 1px solid #f9f9f9;
+        margin-bottom: -2px;
+    }
+
+    nav.but-account-navigation ul li:last-of-type {
+        border-right: 1px solid #ddd;
+    }
+
+    .buttons-wrap {
+        margin-bottom: 25px;
+    }
+
+    nav.but-account-navigation ul  li a {
+        font-size: 14px;
+    }
+    .account-orders table thead>tr>th,
+    .account-orders table tbody>th>td {
+        min-width: 0;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    nav.but-account-navigation ul  li .nav-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav.but-account-navigation ul li a {
+        padding: 7px 3px;
+    }
+    .orders-table.my_account_orders {
+        margin: 0 auto;
+    }
+    .account-orders table * {
+        padding: 3px 2px;
+    }
+
+}
+
+@media screen and (max-width: 568px) {
+    .account-orders table thead>tr>th {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .account-orders table tbody>tr>td {
+        font-size: 13px;
+    }
+    .account-orders table thead>tr>th:nth-of-type(2),
+    .account-orders table tr > td:nth-of-type(2),
+    .account-orders table thead>tr>th:last-of-type,
+    .account-orders table tr > td:last-of-type {
+        display: none;
+    }
+}
+
+/*
+  END Account styles
+*/
+
+
+/*
+  Account Address Styles
+*/
+    
+.account-address input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 1px 5px;
+}
+.account-address button {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.account-address #save-address {
+    display: none;
+}
+
+/*
+  END Account Address Styles
+*/
+
+
+/*
+  Order styles
+*/
+
+.single-order .order-title {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.single-order h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.single-order strong {
+    color: #555;
+    font-size: 15px;
+}
+.single-order p {
+    margin-bottom: 10px;
+}
+
+.single-order .order-info,
+.single-order .billing-info {
+    margin-bottom: 15px;
+}
+
+.single-order .order-info span,
+.single-order .billing-info span {
+    font-style: italic;
+}
+
+.single-order .products-wrap legend {
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+}
+
+.single-order #edit-products-form {
+    overflow: auto;
+}
+.single-order .products-table {
+    width: 100%;
+    border: 0;
+    margin-bottom: 55px;
+}
+.single-order .products-table * {
+    padding: 0;
+}
+.single-order .products-table th {
+    padding: 3px 13px;
+    min-width: 100px;
+    border: 0;
+    font-weight: normal;
+}
+.single-order .products-table tbody tr:nth-child(even) {
+    background: #fff
+}
+.single-order .products-table tbody tr:nth-child(odd) {
+    background: #f1f1f1
+}
+.single-order .products-table td {
+    border: 0;
+    padding: 8px 13px;
+}
+.single-order .products-table thead {
+    background-color: #c2647c;
+    color: #ffff;
+}
+.single-order .products-table thead th .dashicons {
+    margin-top: 2px;
+}
+.single-order .products-table input {
+    display: none;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #c1c1c1;
+}
+.single-order .products-table.edit-active .hide-edit,
+.single-order .products-table .show-edit {
+    display: none;
+}
+.single-order .products-table.edit-active .show-edit {
+    display: table-cell;
+}
+.single-order .products-table.edit-active input {
+    display: inline-block;
+}
+
+.single-order .products-total {
+    text-align: right;
+    padding-right: 20px;
+}
+.single-order .products-total strong {
+    padding-right: 20px;
+}
+
+
+
+.tooltip-wrap {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-wrap .tooltiptext {
+    display: none;
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 32px;
+    right: 0;
+    font-size: 13px;
+    line-height: 18px;
+    font-style: italic;
+}
+
+.tooltip-wrap .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    right: 35px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+@media screen and (max-width: 992px) {
+
+    table.products-table thead > tr > th,
+    table.products-table tbody > tr > td {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h1.order-title {
+        font-size: 30px !important;
+    }
+}
+
+/*
+  END Order styles
+*/
+
+
+/** Transactions Styles **/
+
+.transactions-wrap {
+    margin-top: 50px;
+}
+.transactions-wrap h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+}
+
+#add-transaction-form {
+    margin-bottom: 40px;
+}
+
+#add-transaction-form .form-row * {
+    vertical-align: middle;
+}
+#add-transaction-form label {
+    min-width: 132px;
+}
+#add-transaction-form select,
+#add-transaction-form input {
+    padding: 2px 6px;
+    max-width: 230px;
+    width: 100%;
+}
+#add-transaction-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 5px;
+    resize: vertical;
+    padding: 2px 6px;
+}
+
+#transaction_goal {
+    background-color: transparent;
+    height: 30px;
+}
+
+.transaction-lising ul {
+    overflow: hidden;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    list-style: none;
+}
+.transaction-lising ul li {
+    float: left;
+    padding: 0 1%;
+    margin: 0;
+}
+.transaction-lising .date {
+    width: 20%;
+    color: #555;
+}
+.transaction-lising .date a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: underline;
+    margin-top: 5px;
+    line-height: 1.3em;
+}
+.transaction-lising .assignment {
+    width: 40%;
+}
+.transaction-lising .amount {
+    width: 20%;
+    text-align: center;
+}
+.transaction-lising .status {
+    width: 20%;
+    text-align: center;
+}
+.transaction-lising .comment {
+    padding-top: 5px;
+}
+
+.transaction-lising ul.write-off.confirmed {
+    background: #d6ffc6;
+    border-color: #b3e48a;
+}
+.transaction-lising ul.write-off.waiting {
+    background-color: #d1f5ff;
+    border-color: #76e0ff;
+}
+.transaction-lising ul.write-off.canceled {
+    background-color: #f8f8f8;
+    border-color: #c1c1c1;
+}   
+
+.transaction-lising ul.pay-in {
+    background-color: #ffcaca;
+    border-color: #d29494;
+}
+.transaction-lising ul.admin-comment {
+    background-color: #fff0a2;
+    border-color: #d8cbb1;    
+}
+
+.transaction-lising ul.admin-comment .assignment {
+    width: 78%;
+}
+.transaction-lising ul.admin-comment .comment {
+    padding-top: 0;
+}
+
+ul.transactions {
+    list-style: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+    .transaction-lising .date,
+    .transaction-lising .amount {
+        width: 33%;
+        text-align: center;
+    }
+    .transaction-lising .assignment,
+    .transaction-lising .status,
+    .transaction-lising ul.admin-comment .assignment {
+        width: 67%;
+        text-align: left;
+    }
+    .transaction-lising .amount ,
+    .transaction-lising .status {
+        margin-top: 10px;
+    }
+
+    .transaction-lising .date,
+    .transaction-lising .assignment {
+        min-height: 66px;
+    }
+
+}
+
+
+/** End Transactions Styles **/

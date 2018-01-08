@@ -1,0 +1,162 @@
+/* Admin css */
+
+#post-body-content,
+#transaction_form_meta_box .handlediv,
+#transaction_listing_meta_box .handlediv,
+#btx_order_info_meta_box .handlediv {
+    display: none;
+}
+#transaction_form_meta_box .hndle,
+#transaction_listing_meta_box .hndle,
+#btx_order_info_meta_box .hndle {
+    cursor: default;
+}
+
+.transaction-form label {
+    display: inline-block;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+.transaction-form select,
+.transaction-form input {
+    max-width: 320px;
+    width: 100%;
+    height: 30px;
+}
+.transaction-form textarea {
+    width: 100%;
+    min-height: 100px;
+}
+.transaction-form input[type="submit"] {
+    max-width: 120px;
+}
+.transaction-submit {
+    margin-top: 25px;
+}
+
+
+.transaction-lising ul {
+    overflow: hidden;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 1px solid transparent;
+}
+.transaction-lising ul li {
+    float: left;
+    padding: 0 1%;
+    margin: 0;
+}
+.transaction-lising .date {
+    width: 18%;
+}
+.transaction-lising .assignment {
+    width: 38%;
+}
+.transaction-lising .amount {
+    width: 18%;
+    text-align: center;
+}
+.transaction-lising .status {
+    width: 18%;
+    text-align: center;
+}
+.transaction-lising .comment {
+    padding-top: 5px;
+}
+
+.transaction-lising ul.write-off.confirmed {
+    background: #d6ffc6;
+    border-color: #b3e48a;
+}
+.transaction-lising ul.write-off.waiting {
+    background-color: #d1f5ff;
+    border-color: #76e0ff;
+}
+.transaction-lising ul.write-off.canceled {
+    background-color: #f8f8f8;
+    border-color: #c1c1c1;
+}
+
+.transaction-lising ul.pay-in {
+    background-color: #fdcfcf;
+    border-color: #eca7a7;
+}
+.transaction-lising ul.admin-comment {
+    background-color: #fff7d0;
+    border-color: #e8d1a1;
+}
+.transaction-lising ul.admin-comment .assignment {
+    width: 78%;
+}
+
+.wp-list-table .btx_title,
+.wp-list-table .btx_status {
+    font-weight: 600;
+}
+
+/**
+ * List Table Styles
+ */
+
+#all-transaction-list td.column-title span {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 12px;
+    color: #888;
+}
+
+#all-transaction-list .column-action { 
+    text-align: center;
+    vertical-align: middle;
+}
+#all-transaction-list .column-action a {
+    padding: 3px 6px;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 2px;
+    border: 1px solid transparent;
+}
+#all-transaction-list .column-action a.accept {
+    background-color: #65b765;
+    border-color: #62b162;
+}
+#all-transaction-list .column-action a.dismiss {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+#all-transaction-list .write-off.confirmed {
+    background: #d6ffc6;   
+}
+#all-transaction-list .write-off.waiting {
+    background-color: #d1f5ff;
+}
+#all-transaction-list .write-off.canceled {
+    background-color: #f8f8f8;
+}
+
+
+
+@media screen and (min-width: 783px) {
+    #all-transaction-list .write-off td {
+        border-bottom: 3px solid #fff;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    #all-transaction-list .column-title,
+    #all-transaction-list .column-action {
+        border-bottom: 3px solid #fff;
+    }
+    #all-transaction-list .waiting .column-action {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #all-transaction-list .write-off.is-expanded .column-title {
+        border-bottom: 0;
+    }   
+}
